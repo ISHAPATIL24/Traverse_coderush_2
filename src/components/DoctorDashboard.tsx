@@ -26,9 +26,10 @@ interface Patient {
 }
 
 const mockPatients: Patient[] = [
+  const mockPatients: Patient[] = [
   {
     id: "P001",
-    name: "John Smith",
+    name: "Aarav Sharma",
     age: 28,
     riskScore: 85,
     lastScan: "2024-01-15",
@@ -36,8 +37,8 @@ const mockPatients: Patient[] = [
     confidence: 92
   },
   {
-    id: "P002", 
-    name: "Sarah Johnson",
+    id: "P002",
+    name: "Priya Nair",
     age: 34,
     riskScore: 35,
     lastScan: "2024-01-14",
@@ -46,14 +47,15 @@ const mockPatients: Patient[] = [
   },
   {
     id: "P003",
-    name: "Mike Davis",
+    name: "Rohan Patel",
     age: 42,
     riskScore: 12,
     lastScan: "2024-01-13",
     status: "normal",
     confidence: 94
   }
-]
+];
+  
 
 export function DoctorDashboard() {
   const [selectedPatient, setSelectedPatient] = useState<Patient | null>(mockPatients[0])

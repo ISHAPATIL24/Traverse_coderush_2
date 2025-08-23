@@ -4,9 +4,11 @@ import {
   AlertTriangle, 
   Brain, 
   CheckCircle, 
+  FileText, 
   TrendingUp, 
   Users,
   Download,
+  Eye
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -24,6 +26,7 @@ interface Patient {
 }
 
 const mockPatients: Patient[] = [
+  const mockPatients: Patient[] = [
   {
     id: "P001",
     name: "Aarav Sharma",
@@ -51,7 +54,8 @@ const mockPatients: Patient[] = [
     status: "normal",
     confidence: 94
   }
-]
+];
+  
 
 export function DoctorDashboard() {
   const [selectedPatient, setSelectedPatient] = useState<Patient | null>(mockPatients[0])

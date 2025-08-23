@@ -1,4 +1,3 @@
-
 export default {
   darkmode: ["class"],
   content: [

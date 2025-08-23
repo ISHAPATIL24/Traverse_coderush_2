@@ -4,11 +4,9 @@ import {
   AlertTriangle, 
   Brain, 
   CheckCircle, 
-  FileText, 
   TrendingUp, 
   Users,
   Download,
-  Eye
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -28,7 +26,7 @@ interface Patient {
 const mockPatients: Patient[] = [
   {
     id: "P001",
-    name: "John Smith",
+    name: "Aarav Sharma",
     age: 28,
     riskScore: 85,
     lastScan: "2024-01-15",
@@ -36,8 +34,8 @@ const mockPatients: Patient[] = [
     confidence: 92
   },
   {
-    id: "P002", 
-    name: "Sarah Johnson",
+    id: "P002",
+    name: "Priya Nair",
     age: 34,
     riskScore: 35,
     lastScan: "2024-01-14",
@@ -46,7 +44,7 @@ const mockPatients: Patient[] = [
   },
   {
     id: "P003",
-    name: "Mike Davis",
+    name: "Rohan Patel",
     age: 42,
     riskScore: 12,
     lastScan: "2024-01-13",
@@ -206,7 +204,7 @@ export function DoctorDashboard() {
                       />
                       <EEGChart 
                         data={generateAbnormalEEG()} 
-                        title={${selectedPatient.name} - Current}
+                        title={`${selectedPatient.name} - Current`}
                         color="hsl(var(--destructive))"
                         showAbnormalRegions={true}
                       />
